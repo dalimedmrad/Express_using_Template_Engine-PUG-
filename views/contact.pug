@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    main.flex-shrink-0
+        .container
+            h1.text-center  Contact form 
+            br
+            
+            form
+                .form-group
+                    label(for='exampleInputEmail1') Email address : 
+                    input#exampleInputEmail1.form-control(type='email' placeholder='Enter you email')
+                br
+                .form-group
+                    label(for='message') Message :
+                    textarea#message.form-control(cols="30", rows="7",placeholder='Enter you message')
+                br
+                button.btn.btn-primary(type='submit') Submit
